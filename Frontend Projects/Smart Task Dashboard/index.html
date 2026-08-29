@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A SmartTask productivity dashboard for managing tasks, schedules, and progress."
+    />
+    <title>SmartTask | Dashboard</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#dashboard">
+          <span class="brand-mark">✓</span>
+          <span>SmartTask</span>
+        </a>
+
+        <nav class="main-nav">
+          <p class="nav-heading">Workspace</p>
+
+          <ul>
+            <li><a class="nav-link is-active" href="#dashboard">▦ Dashboard</a></li>
+            <li><a class="nav-link" href="#my-tasks">☑ My Tasks <span>12</span></a></li>
+            <li><a class="nav-link" href="#schedule">◷ Schedule</a></li>
+            <li><a class="nav-link" href="#calendar">□ Calendar</a></li>
+            <li><a class="nav-link" href="#completed">✓ Completed</a></li>
+            <li><a class="nav-link" href="#categories">▣ Categories</a></li>
+          </ul>
+
+          <p class="nav-heading">Account</p>
+
+          <ul>
+            <li><a class="nav-link" href="#settings">⚙ Settings</a></li>
+          </ul>
+        </nav>
+
+        <section class="sidebar-upgrade">
+          <span>✦</span>
+          <h2>Do more with SmartTask</h2>
+          <p>Unlock reminders, calendar sync, and more.</p>
+          <a href="#upgrade">Explore Pro</a>
+        </section>
+
+        <div class="sidebar-profile">
+          <span class="avatar">DM</span>
+          <div>
+            <strong>Divine Mensah</strong>
+            <span>Free plan</span>
+          </div>
+          <button type="button">⋮</button>
+        </div>
+      </aside>
+
+      <main id="dashboard" class="dashboard-main">
+        <header class="topbar">
+          <button class="menu-toggle" type="button">☰</button>
+
+          <form class="search-form">
+            <input
+              type="search"
+              placeholder="Search tasks, projects, or categories..."
+            />
+          </form>
+
+          <div class="topbar-actions">
+            <button type="button">♧</button>
+
+            <button class="profile-button" type="button">
+              <span class="avatar">DM</span>
+              <span>Divine</span>
+              <span>⌄</span>
+            </button>
+          </div>
+        </header>
+
+        <div class="dashboard-content">
+          <section class="welcome-section">
+            <div>
+              <p class="eyebrow">Wednesday, 26 August</p>
+              <h1>Good morning, Divine 👋</h1>
+              <p>Here is what is happening with your tasks today.</p>
+            </div>
+
+            <button class="button button-primary" type="button">
+              ＋ Add new task
+            </button>
+          </section>
+
+          <section class="statistics">
+            <article class="stat-card">
+              <div>
+                <p>Total tasks</p>
+                <strong>12</strong>
+                <span>↑ 2 this week</span>
+              </div>
+              <span>☑</span>
+            </article>
+
+            <article class="stat-card">
+              <div>
+                <p>Due today</p>
+                <strong>5</strong>
+                <span>2 high priority</span>
+              </div>
+              <span>◷</span>
+            </article>
+
+            <article class="stat-card">
+              <div>
+                <p>Completed</p>
+                <strong>7</strong>
+                <span>↑ 18% from last week</span>
+              </div>
+              <span>✓</span>
+            </article>
+
+            <article class="stat-card">
+              <div>
+                <p>Focus time</p>
+                <strong>4h 30m</strong>
+                <span>Today's goal: 6h</span>
+              </div>
+              <span>◉</span>
+            </article>
+          </section>
+
+          <div class="dashboard-grid">
+            <section id="schedule" class="panel">
+              <div class="panel-header">
+                <div>
+                  <p class="eyebrow">Wednesday, 26 August</p>
+                  <h2>Today's schedule</h2>
+                </div>
+
+                <a href="#calendar">View calendar →</a>
+              </div>
+
+              <ol class="schedule-list">
+                <li class="schedule-item">
+                  <time>9:00 AM</time>
+                  <div>
+                    <h3>Academic Studies </h3>
+                    <p>Review study notes</p>
+                    <span class="tag">Study</span>
+                  </div>
+                  <button type="button">⋮</button>
+                </li>
+
+                <li class="schedule-item">
+                  <time>2:00 PM</time>
+                  <div>
+                    <h3>Piano practice</h3>
+                    <p>Practice scales and chords</p>
+                    <span class="tag">Personal</span>
+                  </div>
+                  <button type="button">⋮</button>
+                </li>
+
+                <li class="schedule-item">
+                  <time>6:00 PM</time>
+                  <div>
+                    <h3>Work on Tech Projects</h3>
+                    <p>Finish the responsive landing page</p>
+                    <span class="tag">Work</span>
+                  </div>
+                  <button type="button">⋮</button>
+                </li>
+              </ol>
+            </section>
+
+            <section id="completed" class="panel">
+              <div class="panel-header">
+                <div>
+                  <p class="eyebrow">This week</p>
+                 
